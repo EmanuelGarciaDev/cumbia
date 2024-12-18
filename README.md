@@ -1,5 +1,10 @@
-# Mantine Next Template
+Cumbia para todxs, la pagina web.
 
-Get started with the template by clicking `Use this template` button on the top of the page.
-
-[Documentation](https://mantine.dev/guides/next/)
+Pagina con videoHero
+carousel de videos
+carousel de imagenes
+API de IG
+API de Spoty
+Informacion general sobre los toques de la banda
+contacto
+Sachita for ever <3
