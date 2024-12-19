@@ -5,8 +5,10 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import YouTube from 'react-youtube';
 
 const navigation = [
-  { name: 'Contacto', href: '#' },
-  { name: 'Galeria', href: '#' },
+  { name: 'Redes', href: '/Media' },
+  { name: 'Galeria', href: '/ImageCarousel' },
+  { name: 'Shows', href: '/Shows' },
+  { name: 'Contacto', href: '/Contact' },
 ]
 
 export default function Header() {
