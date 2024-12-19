@@ -1,11 +1,15 @@
 import Header from "../components/Header";
-import HeroHero from "../components/HeroHero"
+import ImageCarousel from "../components/ImageCarousel";
+import Media from "../components/Media";
+import VideoHero from "../components/VideoHero";
 
 export default function HomePage() {
   return ( 
   <div>
     <Header />
-    <HeroHero />
+    <VideoHero />
+    <Media />
+    <ImageCarousel />
   </div>
   )
 }
