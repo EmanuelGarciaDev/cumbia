@@ -11,14 +11,14 @@
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
-    "@mantine/core": "7.1.1",
+    "@mantine/core": "^7.1.1",
     "@mantine/ds": "^7.1.1",
-    "@mantine/hooks": "7.1.1",
+    "@mantine/hooks": "^7.1.1",
     "autoprefixer": "^10.4.16",
     "next": "13.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.11.0",
+    "react-icons": "^4.12.0",
     "react-youtube": "^10.1.0",
     "youtube-background": "^1.0.14"
   },

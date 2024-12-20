@@ -161,7 +161,7 @@
     clsx "2.0.0"
     highlight.js "^11.7.0"
 
-"@mantine/core@7.1.1":
+"@mantine/core@^7.1.1", "@mantine/core@7.1.1":
   version "7.1.1"
   resolved "https://registry.npmjs.org/@mantine/core/-/core-7.1.1.tgz"
   integrity sha512-7PBbu/zlL3Uw4HtBVf48fpTy/IFVSJzhMkh3sxG9HQxZot6c5cjuBuTCT+FFY5xicuoYQTu6nkHjZiaz7j12Ug==
@@ -180,7 +180,7 @@
   dependencies:
     clsx "2.0.0"
 
-"@mantine/hooks@7.1.1":
+"@mantine/hooks@^7.1.1", "@mantine/hooks@7.1.1":
   version "7.1.1"
   resolved "https://registry.npmjs.org/@mantine/hooks/-/hooks-7.1.1.tgz"
   integrity sha512-k+9NX/YW+pUioH0s2qPmHfGAoSXuNobu1tfT+2eiLMkiQkj3PcErD4K/KJ0MCkR4mGh9PmVcFZbxoYSxgLqRZw==
@@ -2003,10 +2003,10 @@ queue-microtask@^1.2.2:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
-react-icons@^4.11.0:
-  version "4.11.0"
-  resolved "https://registry.npmjs.org/react-icons/-/react-icons-4.11.0.tgz"
-  integrity sha512-V+4khzYcE5EBk/BvcuYRq6V/osf11ODUM2J8hg2FDSswRrGvqiYUYPRy4OdrWaQOBj4NcpJfmHZLNaD+VH0TyA==
+react-icons@^4.12.0:
+  version "4.12.0"
+  resolved "https://registry.npmjs.org/react-icons/-/react-icons-4.12.0.tgz"
+  integrity sha512-IBaDuHiShdZqmfc/TwHu6+d6k2ltNCf3AszxNmjJc1KUfXdEeRJOKyNvLmAHaarhzGmTSVygNdyu8/opXv2gaw==
 
 react-is@^16.13.1:
   version "16.13.1"
