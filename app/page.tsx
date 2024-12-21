@@ -1,3 +1,4 @@
+import { AppShell } from "@mantine/core";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -8,7 +9,7 @@ import VideoHero from "../components/VideoHero";
 
 export default function HomePage() {
   return ( 
-  <div>
+  <AppShell>
     <Header />
     {/* <VideoHero /> */}
     <Media />
@@ -16,6 +17,6 @@ export default function HomePage() {
     <Shows />
     <Contact />
     <Footer />
-  </div>
+  </AppShell>
   )
 }

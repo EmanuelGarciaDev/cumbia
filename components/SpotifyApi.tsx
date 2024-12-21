@@ -1,8 +1,9 @@
+import { Box } from '@mantine/core'
 import React from 'react'
 
 const SpotifyApi = () => {
   return (
-    <div>SpotifyApi</div>
+    <Box>SpotifyApi</Box>
   )
 }
 
