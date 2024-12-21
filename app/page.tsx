@@ -9,7 +9,7 @@ import VideoHero from "../components/VideoHero";
 
 export default function HomePage() {
   return ( 
-  <AppShell>
+  <div>
     <Header />
     {/* <VideoHero /> */}
     <Media />
@@ -17,6 +17,6 @@ export default function HomePage() {
     <Shows />
     <Contact />
     <Footer />
-  </AppShell>
+  </div>
   )
 }
