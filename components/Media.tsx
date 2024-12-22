@@ -5,10 +5,12 @@ import { Group } from '@mantine/core'
 
 const Media = () => {
   return (
-    <Group gap="sm" justify="center">
-        <InstagramApi />
-        <SpotifyApi />
-    </Group>
+    <div>
+      <Group gap="sm" justify="center">
+          <InstagramApi />
+          <SpotifyApi />
+      </Group>
+    </div>
   )
 }
 
