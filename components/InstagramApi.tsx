@@ -1,12 +1,30 @@
-import React from "react";
+'use client'
+import React, { useEffect, useState } from "react";
 
 const InstagramApi = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+    const script = document.createElement("script");
+    script.src = "//www.instagram.com/embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  if (!isMounted) {
+    return null; // or return a placeholder
+  }
   return (
     <div>
       <blockquote
         className="instagram-media"
         data-instgrm-captioned
-        data-instgrm-permalink="https://www.instagram.com/reel/C0dAGYDOX0w/?utm_source=ig_embed&amp;utm_campaign=loading"
+        data-instgrm-permalink="https://www.instagram.com/reel/C-GvctuPnN8/?utm_source=ig_embed&amp;utm_campaign=loading"
         data-instgrm-version="14"
         style={{
           background: "#FFF",
@@ -18,8 +36,6 @@ const InstagramApi = () => {
           minWidth: "326px",
           padding: 0,
           width: "99.375%",
-          WebkitCalc: "100% - 2px",
-          calc: "100% - 2px",
         }}
       >
         <div style={{ padding: "16px" }}>

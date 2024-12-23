@@ -12,10 +12,10 @@ export default function HomePage() {
   <div>
     <Header />
     <VideoHero />
-    <Media />
+    <Contact />
+      <Media />
     {/* <ImageCarousel /> */}
     {/* <Shows /> */}
-    <Contact />
     {/* <WhatsAppApi /> */}
     <Footer />
   </div>
