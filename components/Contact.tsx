@@ -1,5 +1,5 @@
 'use client'
-import { Button, Group, Stack, TextInput, Title } from '@mantine/core';
+import { BackgroundImage, Box, Button, Group, Stack, TextInput, Title } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import React from 'react'
 
@@ -23,7 +23,12 @@ const Contact = () => {
     console.log(values);
   };
   return (
-    <Group justify='center'>
+    <Box maw='1200px' mx='auto' my='80px'>
+    <BackgroundImage
+      src='bgImg-Contact.jpg'
+      radius='xl'
+      >
+    <Group justify='center' className='text-white	'>
       <Stack className='p-3'>
         <Title>Reserva ahora tu fecha</Title>
         <Title size='h4'>Completa el formulario y nosotros te contactamos</Title>
@@ -88,7 +93,9 @@ const Contact = () => {
         <a href='' target='_blank'>+54 12 345 678 (NUMERO 2)</a>
         <a href='' target='_blank'>+54 12 345 678 (NUMERO 3)</a>
       </Stack>
-    </Group>
+      </Group>
+      </BackgroundImage>
+    </Box>
   )
 }
 
