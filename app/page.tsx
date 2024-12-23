@@ -11,8 +11,8 @@ export default function HomePage() {
   return ( 
   <div>
     <Header />
-    {/* <VideoHero /> */}
-    {/* <Media /> */}
+    <VideoHero />
+    <Media />
     {/* <ImageCarousel /> */}
     {/* <Shows /> */}
     <Contact />
