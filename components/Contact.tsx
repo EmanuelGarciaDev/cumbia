@@ -23,7 +23,9 @@ const Contact = () => {
     console.log(values);
   };
   return (
-    <Box maw='1200px' mx='auto' my='80px'>
+    <div className="bg-slate-900">
+
+    <Box maw='1200px' mx='auto' py='80px'>
     <BackgroundImage
       src='bgImg-Contact.jpg'
       radius='xl'
@@ -96,6 +98,7 @@ const Contact = () => {
       </Group>
       </BackgroundImage>
     </Box>
+  </div>
   )
 }
 

@@ -6,7 +6,7 @@ import TikTok from './TikTok'
 
 const Media = () => {
   return (
-    <div>
+    <div className=" p-8">
       <Group gap="sm" justify="center">
           <InstagramApi />
             <TikTok />

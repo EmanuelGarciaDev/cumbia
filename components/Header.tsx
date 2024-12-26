@@ -2,21 +2,19 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import YouTube from 'react-youtube';
 
 const navigation = [
-  { name: 'Redes', href: '/Media' },
-  { name: 'Galeria', href: '/ImageCarousel' },
-  { name: 'Shows', href: '/Shows' },
-  { name: 'Contacto', href: '/Contact' },
+  { name: 'Contacto', href: '#Contacto' },
+  { name: 'Redes', href: '#Media' },
+  { name: 'Shows', href: '#Shows' },
 ]
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-white">
-      <header className="absolute inset-x-0 top-0 z-50">
+    <div className="bg-slate-900 ">
+      <header className=" inset-x-0 top-0 z-50"> {/* ABSOLUTE REMOVED*/}
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
@@ -31,7 +29,7 @@ export default function Header() {
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
@@ -40,7 +38,7 @@ export default function Header() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+              <a key={item.name} href={item.href} className="text-lg font-semibold leading-6 text-white"> {/* Changed to text-lg */}
                 {item.name}
               </a>
             ))}
@@ -53,19 +51,20 @@ export default function Header() {
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-slate-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+                <span className="sr-only">Cumbia para Todxs</span>
                 <img
                   className="h-8 w-auto"
                   src='icon.png'
                   alt=""
                 />
               </a>
+              <h1 className='text-white'>Cumbia Para Todxs</h1>
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                className="-m-2.5 rounded-md p-2.5 text-white"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
@@ -79,7 +78,7 @@ export default function Header() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-3 text-base font-semibold leading-7 text-white hover:bg-gray-700" // Increased padding for mobile
                     >
                       {item.name}
                     </a>

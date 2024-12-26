@@ -18,3 +18,8 @@
     text-align: center;
     color: #fff; /* Set your desired text color */
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+  

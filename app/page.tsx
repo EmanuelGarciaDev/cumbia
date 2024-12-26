@@ -9,13 +9,13 @@ import WhatsAppApi from "../components/WhatsAppApi";
 
 export default function HomePage() {
   return ( 
-  <div>
+  <div className="">
     <Header />
     <VideoHero />
-    <Contact />
-    <Media />
-    <Shows />
-  {/* <WhatsAppApi /> */}
+    <div id="Contacto"><Contact /></div>
+    <div id="Media"><Media /></div>
+    <div id="Shows"><Shows /></div>
+    <WhatsAppApi />
     <Footer />
   </div>
   )
