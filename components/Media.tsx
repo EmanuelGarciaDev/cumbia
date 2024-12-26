@@ -9,11 +9,8 @@ const Media = () => {
     <div>
       <Group gap="sm" justify="center">
           <InstagramApi />
-          <Stack>
             <TikTok />
             <SpotifyApi />
-          </Stack>
-
       </Group>
     </div>
   )

@@ -13,10 +13,9 @@ export default function HomePage() {
     <Header />
     <VideoHero />
     <Contact />
-      <Media />
-    {/* <ImageCarousel /> */}
-    {/* <Shows /> */}
-    {/* <WhatsAppApi /> */}
+    <Media />
+    <Shows />
+  {/* <WhatsAppApi /> */}
     <Footer />
   </div>
   )
