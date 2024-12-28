@@ -4,16 +4,35 @@ import React from 'react'
 import { SocialIcon } from 'react-social-icons'
 
 const Footer = () => {
+  const networks = [{
+    name: 'spotify',
+    url: 'https://open.spotify.com/artist/2bdVMwVcL0GYXFj2NVktqL?si=_--2pgnlS-eiAXd5xgw7gQ'
+  },
+  {
+    name: 'youtube',
+    url: 'https://youtube.com/@cumbiaparatodxs?si=TZdkGUZ36WUYZZU_'
+  },
+  {
+    name: 'tiktok',
+    url: 'https://www.tiktok.com/@cumbiaparatodxs'
+  },
+  {
+    name: 'instagram',
+    url: 'https://www.instagram.com/cumbiaparatodxs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='
+  }]
   return (
-    <div className='fixed bottom-0 justify-center w-full	'>
-      <Group justify='center' gap='xs'>
+    <div className=' justify-center w-full bg-slate-900	 text-white font-bold py-[6px]'>
+      <Group justify='center' gap='lg'>
       <div>© CUMBIA PARA TODXS 2021</div>
-      <Group>
-        <div><SocialIcon network='spotify' url='https:/www.spotify.com/' target='_blank'/><a target='_blank' href='https:/www.spotify.com/'>SPOTIFY</a> </div>
-        <div><SocialIcon network='youtube' url='https:/www.youtube.com/' target='_blank'/><a target='_blank' href='https:/www.youtube.com/'>YOUTUBE</a> </div>
-        <div><SocialIcon network='tiktok' url='https:/www.tiktok.com/' target='_blank'/><a target='_blank' href='https:/www.tiktok.com/'>TIK TOK</a> </div>
-        <div><SocialIcon network='instagram' url='https:/www.instagram.com/' target='_blank'/><a target='_blank' href='https:/www.instagram.com/'>INSTAGRAM</a> </div>
-      </Group>
+      {
+        networks.map((network) => {
+          return (
+            <Group gap='xs' key={network.name}>
+              <SocialIcon network={network.name} url={network.url} target='_blank'/><a className='hidden lg:block' target='_blank' href={network.url}>{network.name.toUpperCase()}</a>
+            </Group>
+              )
+        })
+      }
       <div>🪘Sachita for ever ❤️ </div>
       </Group>
     </div>

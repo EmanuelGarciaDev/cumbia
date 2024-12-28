@@ -3,14 +3,18 @@ import InstagramApi from './InstagramApi'
 import SpotifyApi from './SpotifyApi'
 import { Group, Stack } from '@mantine/core'
 import TikTok from './TikTok'
+import YoutubeApi from './YoutubeApi'
 
 const Media = () => {
   return (
-    <div className=" p-8">
+    <div className="bg-slate-200x p-8">
       <Group gap="sm" justify="center">
           <InstagramApi />
-            <TikTok />
+          <TikTok />
+          <Stack>
             <SpotifyApi />
+            <YoutubeApi />
+          </Stack>
       </Group>
     </div>
   )
