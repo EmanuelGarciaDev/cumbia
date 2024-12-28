@@ -23,9 +23,9 @@ const Contact = () => {
     console.log(values);
   };
   return (
-    <div className="bg-slate-900">
+    <div className="bg-slate-900 lg:py-20 py-6">
 
-    <Box maw='1200px' mx='auto' py='80px'>
+    <Box maw='1200px' mx='auto'>
     <BackgroundImage
       src='bgImg-Contact.jpg'
       radius='xl'
@@ -84,7 +84,7 @@ const Contact = () => {
             {...form.getInputProps('message')}
             />
         <Group justify="flex-end" mt="md">
-          <Button variant='default' type="submit">Enviar</Button>
+          <Button variant='filled' type="submit">Enviar</Button>
         </Group> 
         </form>
       </Stack>

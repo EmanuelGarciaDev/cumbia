@@ -13,7 +13,7 @@ export default function HomePage() {
     <Header />
     <VideoHero />
     <div id="Contacto"><Contact /></div>
-    <div id="Media"><Media /></div>
+    {/* <div id="Media"><Media /></div> */}
     <div id="Shows"><Shows /></div>
     <WhatsAppApi />
     <Footer />

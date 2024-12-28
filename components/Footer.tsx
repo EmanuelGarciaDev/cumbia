@@ -22,8 +22,8 @@ const Footer = () => {
   }]
   return (
     <div className=' justify-center w-full bg-slate-900	 text-white font-bold py-[6px]'>
-      <Group justify='center' gap='lg'>
-      <div>© CUMBIA PARA TODXS 2021</div>
+      <Group justify='center' gap='xs'>
+      <div>🪘Sachita for ever ❤️ </div>
       {
         networks.map((network) => {
           return (
@@ -33,7 +33,7 @@ const Footer = () => {
               )
         })
       }
-      <div>🪘Sachita for ever ❤️ </div>
+      <div>© CUMBIA PARA TODXS 2025</div>
       </Group>
     </div>
   )

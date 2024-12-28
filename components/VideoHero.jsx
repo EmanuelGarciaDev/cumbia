@@ -3,7 +3,7 @@ import React from 'react';
 
 const VideoHero = () => {
     return (
-        <div className='relative w-full h-screen'>
+        <div className='relative w-full lg:h-screen h-[50vh]'>
             <video 
                 src='cptVideo.mp4' 
                 className='absolute object-cover -z-10 w-full h-full'
