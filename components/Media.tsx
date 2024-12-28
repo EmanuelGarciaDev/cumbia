@@ -8,7 +8,7 @@ import YoutubeApi from './YoutubeApi'
 const Media = () => {
   return (
     <div className="bg-slate-200x p-8">
-      <Group gap="sm" justify="center">
+      <Group gap="lg" justify="center" className='flex items-start'>
           <InstagramApi />
           <TikTok />
           <Stack>
